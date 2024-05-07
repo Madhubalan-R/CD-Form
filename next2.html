@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+</head>
+<style>
+    body{
+        background-image: url(bg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+      
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+        margin-top: 200px;
+    }
+    .form{
+        background-color: white;
+        height: 400px;
+        width: 450px;
+        padding: 30px;
+        border-radius: 20px;
+        opacity: 0.6;
+        box-shadow: 5px 5px 8px 8px rgb(130, 131, 131);
+    }
+    .form:hover{
+        opacity: 0.8;
+    }
+    .Name{
+        height: 20px;
+        width: 100%;
+        border: 1px solid rgb(158, 156, 156);
+        padding: 10px;
+   }
+   h1{
+    text-align: center;
+    margin-top: 50px;
+   }
+   .span{
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+   }
+   p{
+    margin-top: 100px;
+    text-align: center;
+   }
+   #Gender{
+    height: 50px;
+        width: 100%;
+        border: 1px solid rgb(158, 156, 156);
+        padding: 10px;
+   }
+   input[type="submit"] {
+            background-color: #4CAF50; 
+            border: none; 
+            color: white; 
+            padding: 15px 32px; 
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 20px 2px; 
+            transition-duration: 0.4s; 
+            cursor: pointer; 
+            border-radius: 8px;
+        }
+
+        
+        input[type="submit"]:hover {
+            background-color: #d6e9d7; 
+            color: #4CAF50;
+            border: 2px solid green;
+        }
+</style>
+<body>
+    <h1>Welcome To <span class="span">CRYSTAL DELTA</span></h1>
+    <div class="container">
+        <form class="form" action="https://crystaldelta.com/">
+            <h2>Gender *</h2>
+            <select name="select" id="Gender">
+                <option value="select">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option><br><br>
+            </select>
+            <h2>Date of Birth*</h2>
+            <input type="date" class="Name" placeholder="dd/mm/yyyy" required>
+        
+            <input type="submit" value="submit">
+            
+           
+        </form>
+    </div>
+</body>
+
+</html>

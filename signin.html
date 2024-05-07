@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+</head>
+<style>
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        
+        margin-top: 200px;
+    }
+    .form{
+        background-color: white;
+        height: 430px;
+        width: 450px;
+        padding: 30px;
+        border-radius: 20px;
+       
+        box-shadow: 5px 5px 8px 8px rgb(130, 131, 131);
+    }
+    .Name{
+        height: 20px;
+        width: 100%;
+        border: 1px solid rgb(158, 156, 156);
+        padding: 10px;
+   }
+   button{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    cursor: pointer;
+   }
+   h1{
+    text-align: center;
+    margin-top: 50px;
+   }
+   .span{
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+   }
+   p{
+    margin-top: 100px;
+    text-align: center;
+   }
+</style>
+<body>
+    <h1>Once Again Welcome to <span class="span">CRYSTAL DELTA</span></h1>
+    <div class="container">
+        <form class="form">
+            <h2>User Name *</h2>
+            <input type="text" class="Name" placeholder="First Name" required>
+            <h2>Password *</h2>
+            <input type="password" class="Name" placeholder="Last Name" required>
+        
+            <button type="button" onclick="window.location.href='next.html'">Next</button>
+            
+            <p>I don't have Account <a href="Reg_log.html">SIGN UP</a></p>
+        </form>
+    </div>
+</body>
+</html>
