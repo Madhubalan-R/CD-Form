@@ -6,7 +6,12 @@
     <title>Registration-Form</title>
 </head>
 <style>
-
+      body{
+        background-image: url(bg.jpg);
+        background-attachment: fixed;
+        background-position: center;
+      
+    }
     .container{
         display: flex;
         justify-content: center;
@@ -31,17 +36,6 @@
         border: 1px solid rgb(158, 156, 156);
         padding: 10px;
    }
-   button{
-    background-color: blue;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    height: 50px;
-    width: 100%;
-    margin-top: 30px;
-    padding: 20px;
-    cursor: pointer;
-   }
    h1{
     text-align: center;
     margin-top: 50px;
@@ -55,6 +49,29 @@
     margin-top: 100px;
     text-align: center;
    }
+   input[type="submit"] {
+            background-color: #4CAF50; 
+            border: none; 
+            color: white; 
+            padding: 15px 32px; 
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 20px 2px; 
+            transition-duration: 0.4s; 
+            cursor: pointer; 
+            border-radius: 8px;
+        }
+
+        
+        input[type="submit"]:hover {
+            background-color: #d6e9d7; 
+            color: #4CAF50;
+            border: 2px solid green;
+        }
+</style>
 </style>
 <body>
     <h1>Once Again Welcome to <span class="span">CRYSTAL DELTA</span></h1>
